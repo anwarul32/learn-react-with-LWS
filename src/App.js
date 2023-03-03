@@ -5,8 +5,9 @@ function App() {
   return (
     <div className="App">
       <h1>Hello World</h1>
-
-      <Clock locale="bn-BD" />
+          {/* Components  */}
+      {/* <Clock locale="bn-BD" /> */}
+      <Clock locale="bn-BD" >Bangladeshi</Clock>
     </div>
   );
 }
