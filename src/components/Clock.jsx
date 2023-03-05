@@ -39,7 +39,9 @@ export default class Clock extends Component {
         <h1 className=''>
             <span className='text'>{date.toLocaleTimeString(locale)}</span>
         </h1> 
-        <Button change={this.handleClick} locale={'en-US'} >Click here</Button>
+        {
+          locale === 'bn-BD' ? (<Button change={this.handleClick} locale='en-US' >চাপদিন</Button>) : (<Button change={this.handleClick} locale="bn-BD" >Click</Button>)
+        }
       </div>
     )
   }
